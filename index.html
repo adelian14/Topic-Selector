@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topic Selector</title>
+    <style>
+        .option {
+            width: 90%;
+            border-radius: 15px;
+            padding: 10px;
+            padding-block: 20px;
+            border: none;
+            background-color: #3498db;
+            color: white;
+            font-size: 20px;
+            margin: 10px;
+            cursor: pointer;
+            transition: .3s;
+            margin-block: 30px;
+            font-weight: 700;
+        }
+        .option:hover {
+            background-color: #2980b9;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+            flex-direction: column;
+        }
+        body{
+            background-color: #e3e3df;
+        }
+        .stat {
+            color: #3498db;
+            font-weight: 700;
+            font-family:Arial, Helvetica, sans-serif;
+            margin: 5px;
+        }
+        @media screen and (min-width: 1025px) {
+            .option {
+                width: 50%;
+            }
+        }
+        #cnt{
+            font-size: 22px
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <h1 class="stat" id="round">
+        </h1>
+        <h1 class="stat" id="cnt">
+        </h1>
+        <button class = "option" id = "option1">
+        </button>
+        <button class = "option" id = "option2">
+        </button>
+        <h1 class="stat" id="result">
+        </h1>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
